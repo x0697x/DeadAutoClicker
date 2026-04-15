@@ -40,6 +40,9 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
         // Start/stop
         CreateWindowW(L"Static", L"Press F6 to start/stop\nF7 to toggle left/right click",
             WS_VISIBLE | WS_CHILD | SS_CENTER, 20, 20, 240, 50, hwnd, NULL, NULL, NULL);
+
+        CreateWindowW(L"Static", L"v0.1.0",
+            WS_VISIBLE | WS_CHILD | SS_RIGHT, 180, 130, 100, 20, hwnd, NULL, NULL, NULL);
         break;
 
     case WM_HOTKEY:

@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="DeadAutoClicker/DeadAutoClicker.vcxproj" />
+  <Project Path="DeadAutoClicker/DeadAutoClicker.vcxproj" Id="052b07ee-377a-4b9f-b6aa-a4b20b388004" />
 </Solution>
