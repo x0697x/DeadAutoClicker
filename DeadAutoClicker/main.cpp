@@ -51,7 +51,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
             MessageBeep(MB_OK);
 
             // Update window title
-            SetWindowTextW(hwnd, isClicking ? L"DeadAutoClicker [RUNNING]" : L"DeadAutoClicker [STOPPED]");
+            SetWindowTextW(hwnd, isClicking ? L"DeadAutoClicker [ON]" : L"DeadAutoClicker [OFF]");
         }
         if (wParam == 2) { // F7
             useLeftClick = !useLeftClick;
@@ -79,7 +79,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrev, PWSTR pCmdLine, int nC
     RegisterClassW(&wc);
 
     HWND hwnd = CreateWindowExW(0, CLASS_NAME, L"DeadAutoClicker",
-        WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 300, 200, NULL, NULL, hInstance, NULL);
+        WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 325, 200, NULL, NULL, hInstance, NULL);
 
     if (hwnd == NULL) return 0;
 
