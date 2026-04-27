@@ -1,1 +1,1 @@
-Simple auto-clicker
+Simple auto-clicker in C
