@@ -1,1 +1,1 @@
-Simple auto-clicker in C
+Simple auto-clicker in C++
